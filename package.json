@@ -1,0 +1,27 @@
+{
+  "name": "game-of-life",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "the game of life",
+  "main": "src/index.js",
+  "scripts": {
+    "test-once": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "npm run test-once -- --watchAll",
+    "start": "node --experimental-modules src/index.js"
+  },
+  "engines": {},
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "jest": "^27.2.5",
+    "prettier": "^2.4.1"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  }
+}
